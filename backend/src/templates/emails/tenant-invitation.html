@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willkommen bei ImmoFox</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      background-color: #2c3e50;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      color: #ffffff;
+      margin: 0;
+      font-size: 24px;
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #666666;
+    }
+    .button {
+      display: inline-block;
+      background-color: #3498db;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .info-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid #3498db;
+      padding: 15px;
+      margin: 20px 0;
+    }
+    .property-details {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Willkommen bei ImmoFox</h1>
+    </div>
+    <div class="content">
+      <p>Sehr geehrte(r) {{firstName}} {{lastName}},</p>
+      
+      <p>wir freuen uns, Sie als neuen Mieter bei ImmoFox begrüßen zu dürfen! Ihr Vermieter hat ein Konto für Sie erstellt, damit Sie unsere Plattform nutzen können.</p>
+      
+      <div class="property-details">
+        <h3>Ihre Wohneinheit:</h3>
+        <p><strong>Adresse:</strong> {{propertyAddress}}</p>
+        <p><strong>Wohnungsnummer:</strong> {{unitNumber}}</p>
+      </div>
+
+      <div class="info-box">
+        <h3>Ihre Zugangsdaten:</h3>
+        <p><strong>E-Mail:</strong> {{email}}</p>
+      </div>
+      
+
+      
+      <p>Mit Ihrem ImmoFox-Konto können Sie:</p>
+      <ul>
+        <li>Meldungen an Ihren Vermieter senden</li>
+        <li>Dokumente einsehen und herunterladen</li>
+        <li>Ihre Mietinformationen verwalten</li>
+        <li>Und vieles mehr!</li>
+      </ul>
+      
+      <p>Bitte registrieren Sie sich über den folgenden Link.</p>
+
+      <a href="{{invitationUrl}}" class="button">Jetzt anmelden</a>
+      
+      <p style="margin-top: 30px;">Bei Fragen stehen wir Ihnen gerne zur Verfügung.</p>
+      
+      <p>Mit freundlichen Grüßen,<br>
+      Ihr ImmoFox-Team</p>
+    </div>
+    <div class="footer">
+      <p>© 2025 ImmoFox GmbH | Alle Rechte vorbehalten</p>
+      <p>Diese E-Mail wurde automatisch generiert. Bitte antworten Sie nicht auf diese E-Mail.</p>
+    </div>
+  </div>
+</body>
+</html>
